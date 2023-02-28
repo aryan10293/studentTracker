@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body id="index-body">
+    <section>
+        <h1 id="laker">Lakers Roster</h1>
+        <button><a href="/app-player">ADD PLAYER</a></button>
+    </section>
+
+    <section id="container-index">
+        <section class="grid-container">
+            <p class="grid-name">Name</p>
+            <p class="grid-positon">Position</p>
+            <p class="grid-height">Height</p>
+            <p class="grid-weight">Weight</p>
+            <p>Update</p>
+            <p>Delete</p>
+        </section>
+        <% for(let i = 0; i<list.length; i++) {%>
+            <section class="grid-container">
+                <p class="grid name"><%= list[i].name %></p>
+                <p class="grid positon"><%= list[i].position %></p>
+                <p class="grid height"><%= list[i].height %></p>
+                <p class="grid weight"><%= list[i].weight %></p>
+                <button class="grid edit btn">Update Player</button>
+                <button class=" grid delete btn">Delete Player</button>
+            </section>
+        <%}  %>
+    </section>
+</body>
+</html>
