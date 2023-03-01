@@ -29,7 +29,7 @@
                 <p class="grid positon"><%= list[i].position %></p>
                 <p class="grid height"><%= list[i].height %></p>
                 <p class="grid weight"><%= list[i].weight %></p>
-                <button class="grid edit btn">Update Player</button>
+                <button class="grid edit btn"><a href="/editPlayer/<%= list[i]._id %>">Update Player</a></button>
                 <button class=" grid delete btn">Delete Player</button>
             </section>
         <%}  %>

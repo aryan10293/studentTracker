@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/edit.js" defer></script>
+    <title>Edit Player</title>
+</head>
+<body id="form-body">
+    <div id="container-form">
+        <div id="another-container">
+            <h1 id="add">Edit Player</h1>
+            <form action="" method="">
+                <div class="idk">
+                    <label class="label" for="name">Name:</label>
+                    <input class="input" value="<%= list.name %>" type="text" name="name" id="name" placeholder="Enter Name" required>
+                </div>
+                <div class="idk">
+                    <label class="label" for="position">Postion:</label>
+                    <input class="input" type="text" value="<%= list.position %>" name="position" id='position' placeholder="Enter Position" required>
+                </div>
+                <div class="idk">
+                    <label class="label" for="height">Height:</label>
+                    <input class="input" type="text" id="height" value="<%= list.height %>" name="height" placeholder="Enter Height" required>
+                </div>
+                <div class="idk">
+                    <label class="label" for="weight">Weight:</label>
+                    <input  class="input" type='number' id="weight"  value="<%= list.weight %>" name="weight" placeholder="Enter Weight" required>
+                </div>
+                <div>
+                    <button><a href="/">Cancel</a></button>
+                    <a class="update" href="/">Update</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

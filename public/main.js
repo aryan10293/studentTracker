@@ -21,3 +21,4 @@ async function deleteEdit(){
         console.log(err)
     }
 }
+//console.log(name)
